@@ -12,13 +12,18 @@ const { TransactionSigner, getHighlayerCliAddress } = require("highlayer-cli");
     .setAddress(getHighlayerCliAddress())
     .addActions([
       highlayer.Actions.allocateGas({
-        amount: 5000000,
+        amount: 1000,
         price: 1,
       }),
       {
-        program: "yourContractId",
-        action: "test",
-        params: {},
+        program: "hlcontract1q28lh4ymfv9dhq40e4a7kczmvdd7t4ncrwtlanjcn7zj8wr0r9zhs8rtafy",
+        action: "publish",
+        params: {
+          title: "Test",
+          data: "# Hello world",
+          date: "6/17/2008",
+          sources: ["https"]
+        },
       },
     ]);
 

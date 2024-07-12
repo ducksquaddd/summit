@@ -1,7 +1,11 @@
 [
 	{
-		"program": "system",
-		"action": "",
-		"params": {}
+	  "program": "system",
+	  "action": "kvStore",
+	  "params": {
+		"key": "tb1pjpwx67stcx5sayddm77ndxpg675lgvaxfaj5kqzn4smx9t43ua3sgex6jw",
+		"value": []
+	  }
 	}
-]
+  ]
+  

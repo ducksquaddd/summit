@@ -1,6 +1,7 @@
-const publish = require('./functions/starter.js');
+const publish = require('./functions/publish.js');
 
 export function onTransaction(transaction) {
+	console.log('s')
 	let changes = [];
 	if (
 		!transaction.params ||
