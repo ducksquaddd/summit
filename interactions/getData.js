@@ -8,8 +8,13 @@ const { TransactionSigner, getHighlayerCliAddress } = require("highlayer-cli");
     signingFunction: TransactionSigner,
   });
 
-  let KV = client.KV("hlcontract1q28lh4ymfv9dhq40e4a7kczmvdd7t4ncrwtlanjcn7zj8wr0r9zhs8rtafy")
+  let KV = client.KV(
+    "hlcontract1q7fjf3w4x88rppxz06rfm9w0esdz9gd0cdpcace4ugtxw025xwdkskwd36g"
+  );
 
-
-  console.log(await KV.get("tb1pjpwx67stcx5sayddm77ndxpg675lgvaxfaj5kqzn4smx9t43ua3sgex6jw"));
+  console.log(
+    await KV.get(
+      "tb1pjpwx67stcx5sayddm77ndxpg675lgvaxfaj5kqzn4smx9t43ua3sgex6jw"
+    )
+  );
 })();

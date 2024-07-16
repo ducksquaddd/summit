@@ -8,21 +8,24 @@ const { TransactionSigner, getHighlayerCliAddress } = require("highlayer-cli");
     signingFunction: TransactionSigner,
   });
 
+  console.log(getHighlayerCliAddress());
+
   const transaction = new highlayer.TransactionBuilder()
     .setAddress(getHighlayerCliAddress())
     .addActions([
       highlayer.Actions.allocateGas({
-        amount: 1000,
+        amount: 100000,
         price: 1,
       }),
       {
-        program: "hlcontract1q28lh4ymfv9dhq40e4a7kczmvdd7t4ncrwtlanjcn7zj8wr0r9zhs8rtafy",
+        program:
+          "hlcontract1q7fjf3w4x88rppxz06rfm9w0esdz9gd0cdpcace4ugtxw025xwdkskwd36g",
         action: "publish",
         params: {
           title: "Test",
           data: "# Hello world",
           date: "6/17/2008",
-          sources: ["https"]
+          sources: ["https"],
         },
       },
     ]);
